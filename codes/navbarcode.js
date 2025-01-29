@@ -93,39 +93,44 @@ dropButton.addEventListener("click", openDropMenu);
 
 //resize window
 
-window.addEventListener("resize", function() {
-    const width = window.innerWidth;
+const oldWidth = window.width;
 
-    if (width > 950) {
-        nav1.style.display = "inline";
-        nav2.style.display = "inline";
-        for(var i of mobileMenuElements2){
-            document.getElementsByClassName(i)[0].style.display = "none";
+window.addEventListener("resize", function() {
+    var width = window.innerWidth;
+
+    if(width != oldWidth){
+        if (width > 950) {
+            nav1.style.display = "inline";
+            nav2.style.display = "inline";
+            for(var i of mobileMenuElements2){
+                document.getElementsByClassName(i)[0].style.display = "none";
+            }
+            document.getElementsByClassName("pagina-mobile-header-nav1")[0].style.display = "none";
+        } else if (width <= 950 && width > 730) {
+            nav1.style.display = "inline";
+            nav2.style.display = "none";
+            for(var i of mobileMenuElements2){
+                document.getElementsByClassName(i)[0].style.display = "none";
+            }
+            document.getElementsByClassName("pagina-mobile-header-nav1")[0].style.display = "none";
+        } else {
+            nav1.style.display = "none";
+            nav2.style.display = "none";
+            for(var i of mobileMenuElements2){
+                document.getElementsByClassName(i)[0].style.display = "inline";
+            }
+            document.getElementsByClassName("pagina-mobile-header-nav1")[0].style.display = "inline";
         }
-        document.getElementsByClassName("pagina-mobile-header-nav1")[0].style.display = "none";
-    } else if (width <= 950 && width > 730) {
-        nav1.style.display = "inline";
-        nav2.style.display = "none";
-        for(var i of mobileMenuElements2){
-            document.getElementsByClassName(i)[0].style.display = "none";
-        }
-        document.getElementsByClassName("pagina-mobile-header-nav1")[0].style.display = "none";
-    } else {
-        nav1.style.display = "none";
-        nav2.style.display = "none";
-        for(var i of mobileMenuElements2){
-            document.getElementsByClassName(i)[0].style.display = "inline";
-        }
-        document.getElementsByClassName("pagina-mobile-header-nav1")[0].style.display = "inline";
+        document.getElementsByClassName("pagina-header")[0].style.borderBottom = "3px solid gray";
+        document.getElementsByClassName("pagina-header-dropdown-menu")[0].style.borderBottom = "0";
+        document.getElementById("dropbuttonimage").src = "imgs/buttons/submenu_logo.png";
+        document.getElementsByClassName("pagina-header")[0].style.justifyContent = "space-between";
+        mobileSearchButton.firstChild.src = "imgs/buttons/search_logo1.png";
+        mobileSearchBar[0].style.display = "none";
+        dropMenu[0].style.display = "none";
+        dropMenuActive = false;
+        secondarySearchActive = false;
+        secondaryMobileSearchActive = false;
+        oldWidth = width;
     }
-    document.getElementsByClassName("pagina-header")[0].style.borderBottom = "3px solid gray";
-    document.getElementsByClassName("pagina-header-dropdown-menu")[0].style.borderBottom = "0";
-    document.getElementById("dropbuttonimage").src = "imgs/buttons/submenu_logo.png";
-    document.getElementsByClassName("pagina-header")[0].style.justifyContent = "space-between";
-    mobileSearchButton.firstChild.src = "imgs/buttons/search_logo1.png";
-    mobileSearchBar[0].style.display = "none";
-    dropMenu[0].style.display = "none";
-    dropMenuActive = false;
-    secondarySearchActive = false;
-    secondaryMobileSearchActive = false;
 });
