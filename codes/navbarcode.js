@@ -1,5 +1,3 @@
-var oldWidth = window.width;
-
 //desktop & tablet search button
 
 let secondarySearchActive = false;
@@ -94,6 +92,8 @@ function openDropMenu(){
 dropButton.addEventListener("click", openDropMenu);
 
 //resize window
+
+var oldWidth = window.innerWidth;
 
 window.addEventListener("resize", function() {
     var width = window.innerWidth;
