@@ -18,14 +18,14 @@ body {
 	padding: 20px 0;
 }
 
-.contenedor1 div div img {
+.contenedor1 div div a img {
 	height: 240px;
 	width: auto;
 	transition: transform 0.1s;
 	cursor: pointer;
 }
 
-.contenedor1 div div img:hover {
+.contenedor1 div div a img:hover {
 	transform: scale(1.1);
 }
 
@@ -39,20 +39,25 @@ body {
 }
 
 @media screen and (max-width: 991px) {
-	.contenedor1 div div img {
+	.contenedor1 div div a img {
 		height: 350px;
 		width: auto;
 	}
 }
 
 @media screen and (max-width: 768px) {
-	.contenedor1 div div img {
+	.contenedor1 div div a {
+		display: block;
+		width: 100%;
+		height: auto;
+	}
+
+	.contenedor1 div div a img {
+		display: block;
 		width: 85%;
 		height: auto;
 		margin: auto;
 	}
-
-
 }
 
 @media screen and (max-width: 730px) {
