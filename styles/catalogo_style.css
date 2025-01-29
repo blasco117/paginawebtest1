@@ -1,0 +1,65 @@
+* {
+	font-family: 'Inter';
+}
+
+body {
+	background-color: black;
+	background-image: url("../imgs/web_background.jpeg");
+	background-position: bottom;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.contenedor1 {
+	padding-bottom: 50px;
+}
+
+.contenedor1 div div {
+	padding: 20px 0;
+}
+
+.contenedor1 div div img {
+	height: 240px;
+	width: auto;
+	transition: transform 0.1s;
+	cursor: pointer;
+}
+
+.contenedor1 div div img:hover {
+	transform: scale(1.1);
+}
+
+.contenedor1-h3 {
+	text-align: center;
+	font-size: 26px;
+	padding-top: 30px;
+	padding-bottom: 20px;
+	color: white;
+	font-weight: 500;
+}
+
+@media screen and (max-width: 991px) {
+	.contenedor1 div div img {
+		height: 350px;
+		width: auto;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.contenedor1 div div img {
+		width: 85%;
+		height: auto;
+		margin: auto;
+	}
+
+
+}
+
+@media screen and (max-width: 730px) {
+	body {
+		background-image: url("../imgs/mobile_background1.png");
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-size: 100% 100%;
+	}
+}

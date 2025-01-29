@@ -1,0 +1,22 @@
+//colores
+
+$color-negro: #000000;
+$color-blanco: #FFFFFF;
+
+//boton personalizacion
+
+$primary: $color-negro;
+$btn-padding-x: 20px;
+$btn-padding-y: 20px;
+$btn-font-size: 18px;
+$btn-border-radius: 80px;
+$btn-font-weight: 600;
+
+//alerta personalizacion
+
+$alert-border-radius: 0px;
+$alert-border-width: 0px;
+
+//bootstrap
+
+@import "../libs/bootstrap/scss/bootstrap";

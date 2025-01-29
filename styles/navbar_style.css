@@ -1,0 +1,243 @@
+.pagina-header {
+	background-color: black;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 100px;
+	padding: 5px 10%;
+	border-bottom: 3px solid gray;
+}
+
+.pagina-header .pagina-header-logo img {
+	height: 70px;
+	width: auto;
+	padding: 0px 20px;
+}
+
+.pagina-header .pagina-header-nav1 .pagina-header-nav1-links {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.pagina-header .pagina-header-nav1 .pagina-header-nav1-links li {
+	display: inline-block;
+	padding: 0 20px;
+}
+
+.pagina-header .pagina-header-nav1 .pagina-header-nav1-links li a {
+	display: inline-block;
+	text-decoration: none;
+	color: white;
+	font-size: 22px;
+	text-align: center;
+	transition: transform 0.1s;
+}
+
+.pagina-header .pagina-header-nav1 .pagina-header-nav1-links li a:hover {
+	transform: scale(1.2);
+}
+
+.pagina-header .pagina-header-nav2 .pagina-header-nav2-form input {
+	background-color: black;
+	border: 2px solid gray;
+	border-radius: 30px;
+	height: 45px;
+	width: 400px;
+	padding-left: 13px;
+}
+
+.pagina-header .pagina-header-nav2 .pagina-header-nav2-form input:focus {
+	border: 2px solid white;
+	color: white;
+	outline-color: white;
+}
+
+.pagina-header .pagina-header-nav3 a img {
+	padding: 0px 15px;
+	height: 40px;
+	width: auto;
+	transition: transform 0.1s;
+}
+
+.pagina-header .pagina-header-nav3 a img:hover {
+	transform: scale(1.2);
+}
+
+#search-alternativo {
+	display: none;
+}
+
+.pagina-mobile-header-nav1 {
+	display: none;
+}
+
+.pagina-mobile-header-nav2 {
+	display: none;
+}
+
+.pagina-mobile-header-nav3 {
+	display: none;
+}
+
+.pagina-mobile-header-nav4 {
+	display: none;
+}
+
+.pagina-mobile-header-nav5 {
+	display: none;
+}
+
+.pagina-header-dropdown-menu {
+	display: none;
+	height: 200px;
+	background-color: black;
+}
+
+.pagina-header-dropdown-menu ul {
+	padding: 0;
+	list-style: none;
+}
+
+.pagina-header-dropdown-menu ul li {
+	display: block;
+	padding: 24px 0px;
+	text-align: center;
+}
+
+.pagina-header-dropdown-menu ul li a {
+	font-size: 22px;
+	text-decoration: none;
+	color: white;
+}
+
+.pagina-mobile-header-nav2-search {
+	display: none;
+	margin: auto;
+}
+
+.pagina-mobile-header-nav2-search .pagina-mobile-header-nav2-search-form input {
+	background-color: black;
+	border: 2px solid gray;
+	border-radius: 30px;
+	height: 45px;
+	width: 65vw;
+	padding-left: 13px;
+}
+
+.pagina-mobile-header-nav2-search .pagina-mobile-header-nav2-search-form input:focus {
+	border: 2px solid white;
+	color: white;
+	outline-color: white;
+}
+
+@media screen and (max-width:1200px) {
+	.pagina-header .pagina-header-nav2 .pagina-header-nav2-form input {
+		width: 300px;
+	}	
+}
+
+@media screen and (max-width:1065px) {
+	.pagina-header .pagina-header-nav2 .pagina-header-nav2-form input {
+		width: 200px;
+	}	
+}
+
+@media screen and (max-width:950px) {
+	#search-alternativo {
+		display: inline;
+	}
+
+	.pagina-header-nav2 {
+		display: none;
+	}
+}
+
+@media screen and (max-width:800px) {
+	.pagina-header .pagina-header-nav1 .pagina-header-nav1-links li {
+		padding: 0 10px;
+	}
+
+	.pagina-header-nav2 {
+		display: none;
+	}
+
+	.pagina-header .pagina-header-nav3 a img {
+		padding: 0px 8px;
+	}
+}
+
+@media screen and (max-width:730px) {
+	.pagina-header {
+		padding: 5px 10%;
+	}
+
+	.pagina-header-logo {
+		display: none;
+	}
+
+	.pagina-header-nav1 {
+		display: none;
+	}
+
+	.pagina-header-nav2 {
+		display: none;
+	}
+
+	.pagina-header-nav3 {
+		display: none;
+	}
+
+	.pagina-mobile-header-nav1 {
+		display: inline;
+	}
+
+	.pagina-mobile-header-nav1 a img {
+		height: 40px;
+		width: auto;
+	}
+
+	.pagina-mobile-header-nav2 {
+		display: inline;
+	}
+
+	.pagina-mobile-header-nav2 a img {
+		height: 40px;
+		width: auto;
+	}
+
+	.pagina-mobile-header-nav3 {
+		display: inline;
+	}
+
+	.pagina-mobile-header-nav3 img {
+		height: 55px;
+		width: auto;
+		padding: 0px 20px;
+	}
+
+	.pagina-mobile-header-nav4 {
+		display: inline;
+	}
+
+	.pagina-mobile-header-nav4 a img {
+		height: 40px;
+		width: auto;
+	}
+
+	.pagina-mobile-header-nav5 {
+		display: inline;
+	}
+
+	.pagina-mobile-header-nav5 a img {
+		height: 40px;
+		width: auto;
+	}
+
+}
+
+@media screen and (max-width: 500px){
+	.pagina-header {
+		padding: 5px 5%;
+	}
+}

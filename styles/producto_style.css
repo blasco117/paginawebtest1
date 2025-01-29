@@ -1,0 +1,110 @@
+* {
+	font-family: 'Inter';
+}
+
+body {
+	background-color: black;
+	background-image: url("../imgs/web_background.jpeg");
+	background-position: bottom;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.carousel {
+	width: 460px;
+	height: auto;
+	margin: auto;
+}
+
+.contenedor0 {
+	padding-top: 50px;
+	padding-bottom: 80px;
+}
+
+.carousel-item img {
+	width: 100%;
+	height: auto;
+	margin: auto;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+	width: 60px;
+	height: 60px;
+}
+
+.producto-descripcion-compra {
+	padding: 25px 0;
+}
+
+.producto-precio {
+	padding: 15px 0;
+}
+
+.producto-descripcion-compra h2 {
+	color: white;
+	padding-bottom: 15px;
+	padding-top: 25px;
+}
+
+.producto-descripcion-compra h5 {
+	color: white;
+}
+
+.producto-descripcion-compra ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.producto-descripcion-compra ul li {
+	color: white;
+	text-align: left;
+	padding: 0;
+}
+
+.producto-precio h1 {
+	color: white;
+}
+
+.producto-boton-pago {
+	padding: 25px 0;
+}
+
+.btn-primary {
+	background-color: white;
+	color: black;
+	transition: transform 0.1s;
+}
+
+.btn-primary:hover {
+	background-color: white;
+	color: black;
+	transform: scale(1.1);
+}
+
+.btn-primary:active {
+	background-color: white !important;
+	color: black !important;
+}
+
+.alert-primary {
+	font-weight: 600;
+	font-size: 17px;
+}
+
+@media screen and (max-width: 992px) {
+	.carousel {
+		width: 95%;
+		height: auto;
+		margin: auto;
+	}
+}
+
+@media screen and (max-width: 730px) {
+	body {
+		background-image: url("../imgs/mobile_background1.png");
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-size: 100% 100%;
+	}
+}
