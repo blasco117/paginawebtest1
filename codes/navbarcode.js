@@ -93,10 +93,10 @@ dropButton.addEventListener("click", openDropMenu);
 
 //resize window
 
-const oldWidth = window.width;
+var oldWidth = window.width;
 
 window.addEventListener("resize", function() {
-    var width = window.innerWidth;
+    let width = window.innerWidth;
 
     if(width != oldWidth){
         if (width > 950) {
