@@ -1,0 +1,117 @@
+* {
+	font-family: 'Inter';
+}
+
+body {
+	background-color: black;
+}
+
+.contenedor-back {
+	height: 80px;
+}
+
+.contenedor-back-mobile {
+	display: none;
+}
+
+.contenedor-back-mobile a img {
+	width: 50px;
+	height: auto;
+	margin: 10px 10px;
+} 
+
+.contenedor-back-desktop a {
+	display: inline-block;
+	font-size: 20px;
+	color: white;
+	margin: 10px 10px;
+	text-decoration: none;
+	padding: 15px;
+	transition: transform 0.1s;
+} 
+
+.contenedor-back-desktop a:hover {
+	transform: scale(1.2);
+} 
+
+.contenedor-login {
+	display: block;
+	max-width: 450px;
+	min-width: 300px;
+  	margin: 40px auto;
+}
+
+.contenedor-login form {
+	margin: 0 25px;
+}
+
+.contenedor-login form div{
+	margin: 25px 0;
+}
+
+.boton-login {
+	border: none;
+	color: white;
+	background-color: black;
+	font-size: 18px;
+	text-decoration: none;
+}
+
+.boton-login:hover {
+	text-decoration: underline;
+}
+
+.contenedor-login-signup {
+	text-align: center;
+	margin-top: 50px;
+}
+
+.contenedor-login-signup p {
+	color: lightgray;
+}
+
+.contenedor-login-signup a {
+	color: white;
+}
+
+/* bootstrap form */
+
+.form-label {
+	color: white;
+}
+
+.form-check-label {
+	color: lightgray;
+}
+
+.form-control {
+	background-color: black;
+	border: 2px solid gray;
+	border-radius: 30px;
+	height: 45px;
+	padding-left: 13px;
+	transition: none;
+}
+
+.form-control:focus {
+	background-color: black;
+	border: 2px solid white;
+	color: white;
+	outline-color: white;
+}
+
+.form-control:not(:focus) {
+	color: lightgray;
+}
+
+/* back button */
+
+@media screen and (max-width: 768px) {
+	.contenedor-back-desktop {
+		display: none;
+	} 
+
+	.contenedor-back-mobile {
+		display: inline;
+	} 
+}
